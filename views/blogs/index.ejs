@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs Index</title>
+  </head>
+  <body>
+    <h1>BLOGS!!!</h1>
+    <ul>
+      <% for (let b of blogs) { %>
+      <li>
+        <%= b.blog %> - <b><%= b.author %></b>
+        <a href="/blogs/<%= b.id %>">Details</a>
+      </li>
+      <% } %>
+    </ul>
+    <a href="/Blogs/new">New Blog</a>
+  </body>
+</html>

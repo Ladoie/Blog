@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New</title>
+  </head>
+  <body>
+    <h1>Make a new blog</h1>
+    <form action="/blogs" method="post">
+      <section>
+        <label for="author">Enter your name</label>
+        <input type="text" id="author" placeholder="username" name="author" />
+      </section>
+      <section>
+        <label for="blog">Comment Text</label>
+        <br />
+        <textarea id="blog" cols="30" rows="5" name="blog"></textarea>
+      </section>
+      <button>Submit</button>
+    </form>
+    <a href="/blogs">Blogs</a>
+  </body>
+</html>
